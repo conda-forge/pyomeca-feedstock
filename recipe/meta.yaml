@@ -26,6 +26,7 @@ requirements:
     - matplotlib
     - scipy
     - ezc3d
+    - xlrd
 
 test:
   source_files:

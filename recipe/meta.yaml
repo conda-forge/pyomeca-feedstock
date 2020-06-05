@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 3
+  number: 4
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -27,6 +27,8 @@ requirements:
     - scipy
     - {{ pin_compatible('ezc3d') }}
     - xlrd
+    - xarray
+    - bottleneck
 
 test:
   source_files:
@@ -44,7 +46,7 @@ about:
   summary: 'Pyomeca is a python library allowing to carry out a complete biomechanical analysis; in a simple, logical and concise way'
   description: |
     Python toolbox for biomechanics analysis
-  doc_url: https://github.com/{{ name }}/{{ name }}
+  doc_url: https://pyomeca.github.io
   dev_url: https://github.com/{{ name }}/{{ name }}
 
 extra:

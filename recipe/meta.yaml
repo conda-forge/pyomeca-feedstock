@@ -31,13 +31,8 @@ requirements:
     - bottleneck
 
 test:
-  source_files:
-    - tests
-  requires:
-    - pytest
-    - pytest-cov
-  commands:
-    - make test
+  imports: 
+    - pyomeca
 
 about:
   home: http://github.com/{{ name }}/{{ name }}

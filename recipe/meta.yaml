@@ -1,5 +1,5 @@
 {% set name = "pyomeca" %}
-{% set version = "v1.0" %}
+{% set version = "v1.0.1" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/{{ name }}/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: ba19c36c260da866c3bda69a3aebffc84646c90aeafe30ae191937cb7fdaae4e
+  sha256: 3270d4fd8f800bb4d590eb08f1cb734c8421671e1e4bb8d5394c828d8f8326f8
 
 build:
   noarch: python

@@ -40,7 +40,7 @@ about:
   license_file: LICENSE.md
   summary: 'Pyomeca is a python library allowing to carry out a complete biomechanical analysis; in a simple, logical and concise way'
   description: |
-    Python toolbox for biomechanics analysis
+    Python toolbox for biomechanics analysis 
   doc_url: https://pyomeca.github.io
   dev_url: https://github.com/{{ name }}/{{ name }}
 

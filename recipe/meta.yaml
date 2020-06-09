@@ -1,13 +1,14 @@
+{% set owner = "pyomeca" %}
 {% set name = "pyomeca" %}
-{% set version = "1.0.1" %}
+{% set version = "2020.0.1" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://github.com/{{ name }}/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 3270d4fd8f800bb4d590eb08f1cb734c8421671e1e4bb8d5394c828d8f8326f8
+  url: https://github.com/{{ owner }}/{{ name }}/archive/v{{ version }}.tar.gz
+  sha256: f28c8d1ab3bc0bed36f8048a2b75a6fd8a7c263129d817fbc900285a3b380c5a
 
 build:
   noarch: python
@@ -35,14 +36,14 @@ test:
     - pyomeca
 
 about:
-  home: http://github.com/{{ name }}/{{ name }}
+  home: http://github.com/{{ owner }}/{{ name }}
   license: Apache-2.0
   license_file: LICENSE.md
   summary: 'Pyomeca is a python library allowing to carry out a complete biomechanical analysis; in a simple, logical and concise way'
   description: |
-    Python toolbox for biomechanics analysis 
+    Python toolbox for biomechanics analysis
   doc_url: https://pyomeca.github.io
-  dev_url: https://github.com/{{ name }}/{{ name }}
+  dev_url: https://github.com/{{ owner }}/{{ name }}
 
 extra:
   recipe-maintainers:

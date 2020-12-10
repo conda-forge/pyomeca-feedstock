@@ -1,19 +1,19 @@
 {% set owner = "pyomeca" %}
 {% set name = "pyomeca" %}
-{% set version = "2020.0.1" %}
+{% set version = "2020.0.2" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://github.com/{{ owner }}/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: f28c8d1ab3bc0bed36f8048a2b75a6fd8a7c263129d817fbc900285a3b380c5a
+  url: https://github.com/{{ owner }}/{{ name }}/archive/{{ version }}.tar.gz
+  sha256: bc3c2d901e071ecf85458fdb58a21a1c0019f96e9b32354e56f00e99ee2c8a34
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -32,14 +32,14 @@ requirements:
     - bottleneck
 
 test:
-  imports: 
+  imports:
     - pyomeca
 
 about:
   home: http://github.com/{{ owner }}/{{ name }}
   license: Apache-2.0
   license_file: LICENSE.md
-  summary: 'Pyomeca is a python library allowing to carry out a complete biomechanical analysis; in a simple, logical and concise way'
+  summary: Pyomeca is a python library allowing to carry out a complete biomechanical analysis; in a simple, logical and concise way
   description: |
     Python toolbox for biomechanics analysis
   doc_url: https://pyomeca.github.io

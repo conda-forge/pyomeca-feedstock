@@ -5,9 +5,13 @@ Home: http://github.com/pyomeca/pyomeca
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyomeca-feedstock/blob/master/LICENSE.txt)
 
 Summary: Pyomeca is a python library allowing to carry out a complete biomechanical analysis; in a simple, logical and concise way
+
+Development: https://github.com/pyomeca/pyomeca
+
+Documentation: https://pyomeca.github.io
 
 Python toolbox for biomechanics analysis
 

@@ -1,6 +1,6 @@
 {% set owner = "pyomeca" %}
 {% set name = "pyomeca" %}
-{% set version = "2020.0.2" %}
+{% set version = "2021.0.1" %}
 
 package:
   name: {{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/{{ owner }}/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: bc3c2d901e071ecf85458fdb58a21a1c0019f96e9b32354e56f00e99ee2c8a34
+  sha256: fc44d72027fd1908c4706b7df708c32edc2e2da14b54387d741b8b3dcd6ff2e9
 
 build:
   noarch: python

@@ -27,7 +27,7 @@ requirements:
     - matplotlib-base
     - scipy
     - {{ pin_compatible('ezc3d') }}
-    - xlrd
+    - openpyxl
     - xarray
     - bottleneck
 

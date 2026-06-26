@@ -12,16 +12,16 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - setuptools
-    - python >=3.10
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - {{ pin_compatible('numpy') }}
     - pandas
     - matplotlib-base
@@ -32,6 +32,8 @@ requirements:
     - bottleneck
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pyomeca
 
